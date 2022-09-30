@@ -15,7 +15,7 @@ export class AppController {
   @Get('/hello')
   sayHello(): string {
     // 함수
-    return 'Hello everyone';
+    return this.appService.getHi();
   }
   // 데코레이터는 그 데코레이터를 꾸며주는 함수나 클래스와 붙어있어야 한다. => 공백 x
 }
